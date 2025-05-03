@@ -1,7 +1,7 @@
 import os
 import requests
 from dotenv import load_dotenv
-from backend import schemas
+import schemas
 
 load_dotenv()
 

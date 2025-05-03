@@ -1,7 +1,7 @@
 
 from fastapi import APIRouter
-from backend import schemas
-from ..services import blog_service
+import schemas
+from services import blog_service
 
 router = APIRouter(prefix="/blogs")
 

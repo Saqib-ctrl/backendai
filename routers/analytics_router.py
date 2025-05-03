@@ -1,9 +1,9 @@
 
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
-from ..database import SessionLocal
-from ..services import analytics_service
-from ..schemas import AnalyticsSummary
+from database import SessionLocal
+from services import analytics_service
+from schemas import AnalyticsSummary
 
 router = APIRouter(prefix="/analytics")
 

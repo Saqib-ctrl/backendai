@@ -1,6 +1,6 @@
 
 from sqlalchemy.orm import Session
-from ..models import audit_log
+from models import audit_log
 
 def log_action(db: Session, actor: str, action: str, target: str):
     log = audit_log.AuditLog(actor=actor, action=action, target=target)

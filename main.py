@@ -17,29 +17,29 @@ app.add_middleware(
 
 app.include_router(candidate_router.router)
 
-from .routers import application_router
+from routers import application_router
 app.include_router(application_router.router)
 
-from .routers import job_router
+from routers import job_router
 app.include_router(job_router.router)
 
-from .routers import admin_router
+from routers import admin_router
 app.include_router(admin_router.router)
 
-from .routers import message_router
+from routers import message_router
 app.include_router(message_router.router)
 
-from .routers import contract_router
+from routers import contract_router
 app.include_router(contract_router.router)
 
-from .routers import email_router
+from routers import email_router
 app.include_router(email_router.router)
 
-from .routers import blog_router
+from routers import blog_router
 app.include_router(blog_router.router)
 
-from .routers import analytics_router
+from routers import analytics_router
 app.include_router(analytics_router.router)
 
-from .routers import audit_router
+from routers import audit_router
 app.include_router(audit_router.router)

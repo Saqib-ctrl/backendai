@@ -1,7 +1,7 @@
 
 from sqlalchemy.orm import Session
-from ..models import application
-from backend import schemas
+from models import application
+import schemas
 
 def create_application(db: Session, data: schemas.ApplicationCreate):
     new_app = application.Application(

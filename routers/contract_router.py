@@ -1,7 +1,7 @@
 
 from fastapi import APIRouter
-from backend import schemas
-from ..services import contract_service
+import schemas
+from services import contract_service
 
 router = APIRouter(prefix="/contracts")
 

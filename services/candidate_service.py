@@ -1,6 +1,6 @@
 
 from sqlalchemy.orm import Session
-from ..models import candidate
+from models import candidate
 from backend import schemas
 
 def create_or_update_candidate(db: Session, data: schemas.CandidateCreate):

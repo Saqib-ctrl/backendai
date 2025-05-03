@@ -1,6 +1,6 @@
 
 from fastapi import APIRouter, UploadFile, File
-from ..services import resume_ai_service
+from services import resume_ai_service
 
 router = APIRouter()
 

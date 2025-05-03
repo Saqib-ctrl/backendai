@@ -1,7 +1,7 @@
 
 from sqlalchemy.orm import Session
-from ..models import message
-from backend import schemas
+from models import message
+import schemas
 
 def send_message(db: Session, data: schemas.MessageCreate):
     new_msg = message.Message(**data.dict())

@@ -1,7 +1,7 @@
 
 from sqlalchemy.orm import Session
-from ..models import candidate, job, application, message
-from ..schemas import AnalyticsSummary
+from models import candidate, job, application, message
+from schemas import AnalyticsSummary
 
 def get_summary(db: Session) -> AnalyticsSummary:
     return AnalyticsSummary(

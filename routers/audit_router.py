@@ -1,9 +1,9 @@
 
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
-from ..database import SessionLocal
-from ..services import audit_service
-from ..schemas import AuditLogOut
+from database import SessionLocal
+from services import audit_service
+from schemas import AuditLogOut
 
 router = APIRouter(prefix="/logs")
 

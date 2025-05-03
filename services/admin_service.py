@@ -1,7 +1,7 @@
 
 from sqlalchemy.orm import Session
-from ..models import candidate, job, application
-from backend import schemas
+from models import candidate, job, application
+import schemas
 
 def list_candidates(db: Session):
     return db.query(candidate.Candidate).all()

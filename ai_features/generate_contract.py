@@ -1,6 +1,6 @@
 import openai
 
-openai.api_key = "your_openai_api_key"
+openai.api_key = os.getenv("OPENROUTER_API_KEY")
 
 def generate_contract(contract_data):
     prompt = f"Generate an employment contract using this information:\n{contract_data}"

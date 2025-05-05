@@ -1,6 +1,7 @@
 import openai
 
-openai.api_key = "your_openai_api_key"
+openai.api_key = os.getenv("OPENROUTER_API_KEY")
+
 
 def generate_candidate_bio(candidate_data):
     prompt = f"You are an HR expert. Write a short bio for the following candidate:\n{candidate_data}"

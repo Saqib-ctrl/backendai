@@ -1,6 +1,6 @@
 import openai
 
-openai.api_key = "your_openai_api_key"
+openai.api_key = os.getenv("OPENROUTER_API_KEY")
 
 def generate_job_posting(job_data):
     prompt = f"You are an HR assistant. Create a job posting using the following details:\n{job_data}"
